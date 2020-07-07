@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">StrobeLight</string>
+    <string name="change1">Change!</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="change2">Change!</string>
+</resources>
