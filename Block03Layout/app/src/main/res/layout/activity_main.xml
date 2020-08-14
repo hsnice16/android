@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="30"
+        android:weightSum="10"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:id="@+id/button_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="small" />
+
+        <Button
+            android:id="@+id/button_big"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="BIG"
+            android:layout_weight="5"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="70"
+        android:background="@drawable/compass">
+
+        <Button
+            android:id="@+id/button_north"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="159dp"
+            android:layout_marginRight="159dp"
+            android:text="NORTH"
+            android:background="#FF9797"/>
+
+        <Button
+            android:id="@+id/button_south"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="163dp"
+            android:layout_marginRight="163dp"
+            android:layout_marginBottom="7dp"
+            android:text="SOUTH"
+            android:background="#FF9797"/>
+
+        <Button
+            android:id="@+id/button_east"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginBottom="166dp"
+            android:background="#FF9797"
+            android:text="EAST" />
+
+        <Button
+            android:id="@+id/button_west"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="160dp"
+            android:background="#FF9797"
+            android:text="WEST" />
+
+        <Button
+            android:id="@+id/button_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="159dp"
+            android:background="#FF9797"
+            android:text="CENTER" />
+    </RelativeLayout>
+
+</LinearLayout>
